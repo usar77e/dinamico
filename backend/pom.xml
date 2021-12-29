@@ -36,6 +36,22 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.9</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-jpamodelgen -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-jpamodelgen</artifactId>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.github.jhipster/jhipster-framework -->
+		<dependency>
+			<groupId>io.github.jhipster</groupId>
+			<artifactId>jhipster-framework</artifactId>
+			<version>3.0.7</version>
+		</dependency>
 	</dependencies>
 
 	<build>
