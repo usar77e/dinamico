@@ -1,5 +1,6 @@
 package com.dinamica.backend.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.sun.istack.NotNull;
 
 import javax.persistence.*;
@@ -17,6 +18,7 @@ public class Modelo {
     private String nombre;
 
     @ManyToOne(optional = false)
+    @JsonIgnoreProperties("modelos")
     private Marca marca;
 
     @OneToMany(mappedBy = "modelo")

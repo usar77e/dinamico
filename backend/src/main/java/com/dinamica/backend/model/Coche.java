@@ -1,6 +1,8 @@
 package com.dinamica.backend.model;
 import javax.validation.constraints.Min;
 import com.dinamica.backend.enums.Color;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import javax.persistence.*;
 
 @Entity(name = "coche")
@@ -20,6 +22,7 @@ public class Coche {
     private int km;
 
     @ManyToOne(optional = false)
+    @JsonIgnoreProperties("coches")
     private Modelo modelo;
 
     public long getId() {
