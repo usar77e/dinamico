@@ -1,5 +1,6 @@
 package com.dinamica.backend.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.sun.istack.NotNull;
 
@@ -22,6 +23,7 @@ public class Modelo {
     private Marca marca;
 
     @OneToMany(mappedBy = "modelo")
+    @JsonIgnore
     private Set<Coche> coches = new HashSet<>();
 
     public long getId() {
